@@ -118,8 +118,6 @@ public class RequestHandler implements ResourceContainer {
             return "https://my.exoplatform.org";
         } else if (query.toLowerCase().equals("exorepo")) {
             return "https://repository.exoplatform.org";
-        } else if (query.trim().length() == 0) {
-            return "https://google.com";
         } else {
             return "https://google.com/search?q=" + query;
         }
